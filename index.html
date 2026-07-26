@@ -1,131 +1,282 @@
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GamersNet - Warnet & Gaming Center</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="GamersNet - Warnet dengan koneksi cepat, PC gaming, area nyaman, dan harga terjangkau. Lihat lokasi kami di Google Maps.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamersNet - Warnet & Gaming Center Terbaik</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">GamersNet</h1>
-      <nav class="nav">
-        <a href="#fasilitas">Fasilitas</a>
-        <a href="#harga">Harga</a>
-        <a href="#lokasi">Lokasi</a>
-        <a href="#kontak" class="btn">Hubungi</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-purple-600 selection:text-white">
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h2>Selamat datang di GamersNet</h2>
-          <p>Warnet & Gaming Center terbaik untuk main, kerja, dan nongkrong — koneksi cepat, PC up-to-date, dan suasana nyaman.</p>
-          <p class="cta">
-            <a href="#kontak" class="btn primary">Pesan Sekarang</a>
-            <a href="https://maps.app.goo.gl/Tydhv1mDbYwLMCdr9" target="_blank" rel="noopener" class="btn">Lihat di Maps</a>
-          </p>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-extrabold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-400">
+                Gamers<span class="text-indigo-500">Net</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-300">
+                <a href="#fasilitas" class="hover:text-purple-400 transition-colors">Fasilitas</a>
+                <a href="#harga" class="hover:text-purple-400 transition-colors">Harga</a>
+                <a href="#lokasi" class="hover:text-purple-400 transition-colors">Lokasi</a>
+                <a href="#kontak" class="hover:text-purple-400 transition-colors">Hubungi</a>
+            </nav>
+
+            <a href="#kontak" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 font-semibold text-white bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl hover:from-purple-500 hover:to-indigo-500 shadow-lg shadow-purple-900/40 transition-all">
+                Pesan Sekarang
+            </a>
         </div>
-        <div class="hero-media">
-          <div class="card">
-            <h3>Buka setiap hari</h3>
-            <p>10:00 - 02:00</p>
-            <p class="highlight">Diskon khusus untuk member</p>
-          </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <!-- Accent Glow background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute top-1/3 left-1/3 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-purple-950/80 text-purple-300 border border-purple-800/50 mb-6">
+                <i class="fa-solid fa-gift text-purple-400"></i> Diskon khusus untuk member
+            </span>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+                Selamat Datang di <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400">GamersNet</span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 mb-10 leading-relaxed">
+                Warnet & Gaming Center terbaik untuk main, kerja, dan nongkrong — koneksi cepat, PC up-to-date, dan suasana nyaman.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                <a href="#kontak" class="w-full sm:w-auto px-8 py-4 font-bold text-white bg-purple-600 rounded-xl hover:bg-purple-500 shadow-lg shadow-purple-600/30 transition-all">
+                    Pesan Sekarang
+                </a>
+                <a href="#lokasi" class="w-full sm:w-auto px-8 py-4 font-semibold text-slate-300 bg-slate-800/80 hover:bg-slate-800 rounded-xl border border-slate-700 transition-all">
+                    Lihat di Maps
+                </a>
+            </div>
+
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-slate-900/60 border border-slate-800 text-sm text-slate-400">
+                <i class="fa-regular fa-clock text-green-400"></i>
+                <span>Buka setiap hari: <strong class="text-slate-200">10:00 - 02:00</strong></span>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="fasilitas" class="section">
-      <div class="container">
-        <h3>Fasilitas Kami</h3>
-        <div class="features">
-          <div class="feature">
-            <h4>Koneksi Cepat</h4>
-            <p>Internet fiber optic dengan latency rendah, cocok untuk gaming dan streaming.</p>
-          </div>
-          <div class="feature">
-            <h4>PC & Konsol Gaming</h4>
-            <p>Rig gaming terbaru, kursi ergonomis, headset, dan perangkat lengkap.</p>
-          </div>
-          <div class="feature">
-            <h4>Area Santai & Cafe</h4>
-            <p>Minuman & snack, ruang nongkrong, dan AC.</p>
-          </div>
-          <div class="feature">
-            <h4>Layanan Print & Scan</h4>
-            <p>Solusi cepat untuk cetak tugas dan dokumen kantor.</p>
-          </div>
+    <!-- Fasilitas Section -->
+    <section id="fasilitas" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Fasilitas Kami</h2>
+                <p class="text-slate-400">Semua yang kamu butuhkan untuk pengalaman gaming dan kerja yang maksimal.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Fasilitas 1 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-purple-900/30 rounded-xl flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Koneksi Cepat</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Internet fiber optic dengan latency rendah, cocok untuk gaming dan streaming.
+                    </p>
+                </div>
+
+                <!-- Fasilitas 2 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-indigo-900/30 rounded-xl flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">PC & Konsol Gaming</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Rig gaming terbaru, kursi ergonomis, headset, dan perangkat lengkap.
+                    </p>
+                </div>
+
+                <!-- Fasilitas 3 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-cyan-900/30 rounded-xl flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Area Santai & Cafe</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Minuman & snack, ruang nongkrong, dan AC.
+                    </p>
+                </div>
+
+                <!-- Fasilitas 4 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-900/30 rounded-xl flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Layanan Print & Scan</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Solusi cepat untuk cetak tugas dan dokumen kantor.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="harga" class="section alt">
-      <div class="container">
-        <h3>Harga</h3>
-        <div class="pricing">
-          <div class="price-card">
-            <h4>Per Jam</h4>
-            <p class="price">Rp 5.000</p>
-            <p>Termasuk akses internet & PC standar.</p>
-          </div>
-          <div class="price-card">
-            <h4>Paket 4 Jam</h4>
-            <p class="price">Rp 18.000</p>
-            <p>Lebih hemat untuk sesi panjang.</p>
-          </div>
-          <div class="price-card">
-            <h4>Member Bulanan</h4>
-            <p class="price">Rp 120.000</p>
-            <p>Akses prioritas, diskon makanan, dan paket turnamen.</p>
-          </div>
+    <!-- Harga Section -->
+    <section id="harga" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Pilihan Paket Harga</h2>
+                <p class="text-slate-400">Pilih paket main yang sesuai dengan kebutuhanmu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Paket 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Per Jam</h3>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold">Rp 5.000</span>
+                        </div>
+                        <ul class="text-sm text-slate-300 space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> Termasuk akses internet
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> PC standar
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#kontak" class="w-full text-center py-3 bg-slate-800 hover:bg-slate-700 rounded-xl font-semibold transition-all">Pilih Paket</a>
+                </div>
+
+                <!-- Paket 2 (Featured) -->
+                <div class="bg-slate-900 border-2 border-purple-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-purple-950/50">
+                    <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Paling Hemat</span>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Paket 4 Jam</h3>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">Rp 18.000</span>
+                        </div>
+                        <ul class="text-sm text-slate-300 space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> Lebih hemat untuk sesi panjang
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> Akses PC gaming lengkap
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#kontak" class="w-full text-center py-3 bg-purple-600 hover:bg-purple-500 rounded-xl font-semibold transition-all shadow-lg shadow-purple-600/30">Pilih Paket</a>
+                </div>
+
+                <!-- Paket 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Member Bulanan</h3>
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold">Rp 120.000</span>
+                        </div>
+                        <ul class="text-sm text-slate-300 space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> Akses prioritas
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> Diskon makanan
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-purple-400"></i> Paket turnamen
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#kontak" class="w-full text-center py-3 bg-slate-800 hover:bg-slate-700 rounded-xl font-semibold transition-all">Daftar Member</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="lokasi" class="section">
-      <div class="container">
-        <h3>Lokasi</h3>
-        <p>Kami berada di lokasi berikut — klik untuk melihat peta lengkap:</p>
-        <p><a href="https://maps.app.goo.gl/Tydhv1mDbYwLMCdr9" target="_blank" rel="noopener">Buka di Google Maps (GamersNet)</a></p>
-        <div class="map-embed">
-          <!-- Jika embed gagal, tautan di atas tetap bekerja -->
-          <iframe title="Peta GamersNet" src="https://www.google.com/maps?q=Tydhv1mDbYwLMCdr9&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Lokasi Section -->
+    <section id="lokasi" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Lokasi Kami</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">Kami berada di lokasi strategis yang mudah dijangkau — klik tombol di bawah untuk melihat peta lengkap:</p>
+            
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-xl font-semibold transition-all">
+                <i class="fa-solid fa-map-location-dot text-red-400 text-xl"></i>
+                <span>Buka di Google Maps (GamersNet)</span>
+            </a>
         </div>
-      </div>
     </section>
 
-    <section id="kontak" class="section alt contact">
-      <div class="container">
-        <h3>Kontak & Reservasi</h3>
-        <p>Telepon / WhatsApp: <a href="tel:+628123456789">+62 812-3456-789</a></p>
-        <p>Email: <a href="mailto:info@gamersnet.id">info@gamersnet.id</a></p>
-        <form class="contact-form" action="#" onsubmit="alert('Terima kasih! Kami akan menghubungi Anda.'); return false;">
-          <label>
-            Nama
-            <input type="text" name="nama" placeholder="Nama Anda" required>
-          </label>
-          <label>
-            Pesan
-            <textarea name="pesan" rows="4" placeholder="Kapan dan berapa orang?" required></textarea>
-          </label>
-          <button type="submit" class="btn primary">Kirim Pesan</button>
-        </form>
-      </div>
-    </section>
-  </main>
+    <!-- Kontak & Reservasi Section -->
+    <section id="kontak" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Kontak -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Kontak & Reservasi</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Ingin memesan tempat lebih awal atau sekadar bertanya? Hubungi kami langsung atau isi formulir reservasi.
+                    </p>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 GamersNet. Semua hak cipta dilindungi.</p>
-      <p class="small">Alamat lengkap & kebijakan privasi tersedia di lokasi.</p>
-    </div>
-  </footer>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-900/30 rounded-xl flex items-center justify-center text-green-400 text-xl">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Telepon / WhatsApp</div>
+                                <a href="https://wa.me/628123456789" class="font-semibold hover:text-purple-400 transition-colors">+62 812-3456-789</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-purple-900/30 rounded-xl flex items-center justify-center text-purple-400 text-xl">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Email</div>
+                                <a href="mailto:info@gamersnet.id" class="font-semibold hover:text-purple-400 transition-colors">info@gamersnet.id</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Reservasi -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="nama" class="block text-sm font-medium mb-2">Nama Anda</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-purple-500 text-slate-200 placeholder-slate-500">
+                        </div>
+
+                        <div>
+                            <label for="pesan" class="block text-sm font-medium mb-2">Pesan / Detail Booking</label>
+                            <textarea id="pesan" name="pesan" rows="4" placeholder="Kapan dan berapa orang?" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl focus:outline-none focus:border-purple-500 text-slate-200 placeholder-slate-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-purple-600 hover:bg-purple-500 font-bold rounded-xl shadow-lg shadow-purple-600/30 transition-all">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+            <p>© 2026 GamersNet. Semua hak cipta dilindungi.</p>
+            <p class="text-xs text-slate-600">Alamat lengkap & kebijakan privasi tersedia di lokasi.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
